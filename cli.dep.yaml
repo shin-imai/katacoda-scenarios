@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: katacoda-cli
+  labels:
+    app: cli
+spec:
+  selector:
+    matchLabels:
+      app: katacoda
+  template:
+    metadata:
+      labels:
+        app: katacoda
+    spec:
+      containers:
+      - name: cli
+        image: alpine:3.12.0
+        command:
+        - sh
+        - -c
+        args:
+        - |
+          apk update
+          apk install nodejs npm git openssh-client
+          git config --global user.email $(EMAIL)
+          git config --global user.name $(NAME)
+          sleep infinity
+        workingDir: /workingdir
+        env:
+        - name: EMAIL
+          value: linuxtatsujin@yahoo.com
+        - name: NAME
+          value: Shin Imai
+        volumeMounts:
+        - name: workdir
+          mountPath: /workingdir
+      volumes:
+      - name: workdir
