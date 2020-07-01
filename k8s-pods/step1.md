@@ -52,3 +52,5 @@ metadata:
 
 Apply the manifest with `kubectl create -f katacoda-resources/k8s-pods/simple.po.yaml`{{execute}}
 
+Check if the pod is running with `kubectl get pods`{{execute}}
+
