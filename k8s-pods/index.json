@@ -27,7 +27,8 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData": "git-clone-resources.sh",
     },
     "finish": {
       "text": "finish.md"
