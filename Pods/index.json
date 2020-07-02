@@ -1,5 +1,5 @@
 {
-  "title": "myFirstSenario",
+  "title": "Pods",
   "description": "Kubernetes for beginners",
   "difficulty": "Beginner",
   "time": "10",
@@ -29,12 +29,12 @@
     ],
     "assets": {
       "host01": [
-        {"file": "simple.po.yaml", "target": "/root/"}
+        {"file": "simple.po.yaml", "target": "/root/assets"},
+        {"file": "multi-container.po.yaml", "target": "/root/assets"}
       ]
     },
     "intro": {
-      "text": "intro.md",
-      "courseData": "git-clone-resources.sh"
+      "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"

@@ -1,4 +1,4 @@
-This senario shows the simplest pod. Other senarios will explain in more advanced pods. 
+This senario shows the simplest pod. Other senarios will explain in more advanced and practical pods. 
 
 ## Pod
 
@@ -50,7 +50,10 @@ metadata:
 
   The `spec` is configuration of the resource. 
 
-Apply the manifest with `kubectl create -f katacoda-resources/k8s-pods/simple.po.yaml`{{execute}}
+Apply the manifest with below command
+
+`kubectl create -f assets/simple.po.yaml`{{execute}}
 
 Check if the pod is running with `kubectl get pods`{{execute}}
 
+If you can confirm the pod is running, go to next step.
