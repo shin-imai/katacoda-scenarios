@@ -41,7 +41,7 @@ You should be able to see errors.
 
 Containers in a pod cannot be listen on the same port. Change the image to busybox and start it again. 
 
-Edit `/root/assets/multi-container.po.yaml`{{open}} in the top right pane. 
+Edit `multi-container.po.yaml`{{open}} in the top right pane. 
 
 ```yaml
   containers:
