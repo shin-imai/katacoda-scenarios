@@ -28,8 +28,8 @@
     ],
     "assets": {
       "host01": [
-        {"file": "simple.po.yaml", "target": "/root"},
-        {"file": "multi-container.po.yaml", "target": "/root"}
+        {"file": "simple.po.yaml", "target": "/root/assets/"},
+        {"file": "multi-containers.po.yaml", "target": "/root/assets/"}
       ]
     },
     "intro": {

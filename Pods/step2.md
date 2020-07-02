@@ -2,7 +2,7 @@
 
 Pods can contain multiple containers. 
 
-Open the sample in the editor `assets/multi-container.po.yaml`{{open}}
+Open the sample in the editor `assets/multi-containers.po.yaml`
 
 You should be able to see more containers defined like below.
 
@@ -15,7 +15,7 @@ You should be able to see more containers defined like below.
 ```
 
 Create the pod with the below command.
-`kubectl create -f assets/multi-container.po.yaml`{{execute}}
+`kubectl create -f assets/multi-containers.po.yaml`{{execute}}
 
 And see if the pod is running. 
 
@@ -40,9 +40,8 @@ You should be able to see errors.
 ## Fix the issue
 
 Containers in a pod cannot be listen on the same port. Change the image to busybox and start it again. 
-`.bashrc`{{open}}
-`simple.po.yaml`{{open}}
-Edit `multi-container.po.yaml`{{open}} in the top right pane. 
+
+Edit `assets/multi-containers.po.yaml` in the top right pane. 
 
 ```yaml
   containers:
