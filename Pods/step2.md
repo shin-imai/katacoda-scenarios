@@ -60,3 +60,16 @@ Check if the pod is running.
 
 `kubectl get pods`{{execute}}
 
+Install `ip` command on `nginx-one` container to see the containers have the same network interfaces since they use the same network namespace.
+
+`kubectl exec secondpod -c nginx-one -- bash -c "apt-get update; apt-get install -y iproute2"`{{execute}}
+
+Run `ip a` on nginx-one container.
+
+`kubectl exec secondpod -c nginx-one -- ip a`{{execute}}
+
+run `ip a` on busybox container.
+
+`kubectl exec secondpod -c busybox -- ip a`{{execute}}
+
+You can see the network interfaces are the same between containers in a pod. 
