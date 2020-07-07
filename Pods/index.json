@@ -7,7 +7,8 @@
     "steps": [
       {
         "title": "Step 1",
-        "text": "step1.md"
+        "text": "step1.md",
+        "background": "scripts/setup.sh"
       },
       {
         "title": "Step 2",
@@ -16,7 +17,8 @@
       },
       {
         "title": "Step 3",
-        "text": "step3.md"
+        "text": "step3.md",
+        "background": "scripts/cleanup.sh"
       },
       {
         "title": "Step 4",
@@ -41,11 +43,11 @@
     }
   },
   "files": [
-    "simeple.po.yaml", "multi-containers.po.yaml"
+    "simple.po.yaml", "multi-containers.po.yaml"
   ],
   "environment": {
     "uilayout": "editor-terminal",
-    "uieditorpath": "/root/assets"
+    "uieditorpath": "/root/samples"
   },
   "backend": {
     "imageid": "kubernetes-cluster-running"
