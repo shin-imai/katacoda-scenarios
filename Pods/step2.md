@@ -2,7 +2,7 @@
 
 Pods can contain multiple containers. 
 
-Open the sample in the editor `multi-containers.po.yaml`{{open}}
+Open the sample in the editor `/root/assets/simple.po.yaml`{{open}}
 
 You should be able to see more containers defined like below.
 
@@ -41,7 +41,7 @@ You should be able to see errors.
 
 Containers in a pod cannot be listen on the same port. Change the image to busybox and start it again. 
 
-Edit `multi-containers.po.yaml`{{open}} in the top right pane. 
+Edit `/root/samples/multi-containers.po.yaml`{{open}} in the top right pane. 
 
 ```yaml
   containers:
