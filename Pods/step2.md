@@ -52,3 +52,11 @@ Edit `assets/multi-containers.po.yaml` in the top right pane.
     tty: true           # <- Add: busybox image requires tty
 ```
 
+Now, you should be able to deploy the pod without an error. However, you can't overwrite the existing pod so you need to delete the pod and create it again. `replace` with `--force` option will delete and create a pot with one command. 
+
+`kubectl replace -f assets/multi-containers.po.yaml --force`{{execute}}
+
+Check if the pod is running.
+
+`kubectl get pods`{{execute}}
+
