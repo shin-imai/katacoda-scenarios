@@ -43,7 +43,7 @@
     }
   },
   "files": [
-    "simple.po.yaml", "multi-containers.po.yaml"
+    "/root/samples/simple.po.yaml", "/root/samples/multi-containers.po.yaml"
   ],
   "environment": {
     "uilayout": "editor-terminal",
