@@ -42,9 +42,6 @@
       "text": "finish.md"
     }
   },
-  "files": [
-    "/root/samples/simple.po.yaml", "/root/samples/multi-containers.po.yaml"
-  ],
   "environment": {
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/samples"
