@@ -2,7 +2,7 @@
 
 Pods can contain multiple containers. 
 
-Open the sample in the editor `/root/assets/simple.po.yaml`{{open}}
+Open the sample in the editor `/root/assets/multi-containers.po.yaml`
 
 You should be able to see more containers defined like below.
 
@@ -41,7 +41,7 @@ You should be able to see errors.
 
 Containers in a pod cannot be listen on the same port. Change the image to busybox and start it again. 
 
-Edit `/root/samples/multi-containers.po.yaml`{{open}} in the top right pane. 
+Edit `/root/samples/multi-containers.po.yaml` in the top right pane. 
 
 ```yaml
   containers:
@@ -72,4 +72,11 @@ run `ip a` on busybox container.
 
 `kubectl exec secondpod -c busybox -- ip a`{{execute}}
 
-You can see the network interfaces are the same between containers in a pod. 
+You can see the network interfaces are the same between containers in a pod.
+
+Therefore if you want to access a container in the same pod, you can use `127.0.0.1`.
+
+`kubectl exec secondpod -c busybox -- wget -O - http://localhost`{{execute}}
+
+You see response. 
+
