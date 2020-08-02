@@ -1,10 +1,12 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: katacoda-cli
+  namespace: katacoda
   labels:
     app: cli
 spec:
+  serviceName: katacoda
   selector:
     matchLabels:
       app: katacoda
@@ -22,7 +24,7 @@ spec:
         args:
         - |
           apk update
-          apk install nodejs npm git openssh-client
+          apk add nodejs npm git openssh-client
           git config --global user.email $(EMAIL)
           git config --global user.name $(NAME)
           sleep infinity
@@ -33,7 +35,15 @@ spec:
         - name: NAME
           value: Shin Imai
         volumeMounts:
-        - name: workdir
+        - name: katacoda
           mountPath: /workingdir
-      volumes:
-      - name: workdir
+  volumeClaimTemplates:
+  - metadata:
+      name: katacoda
+    spec:
+      accessModes:
+      - ReadWriteOnce
+      resources:
+        requests:
+          storage: 5Gi
+      storageClassName: standard
