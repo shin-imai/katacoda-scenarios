@@ -1,4 +1,4 @@
-# Environment variables & ConfigMap
+# Environment variables
 
 You can set environment variables for containers in a pod. 
 
