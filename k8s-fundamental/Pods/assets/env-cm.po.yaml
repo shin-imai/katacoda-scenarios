@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: firstcm-pod
+spec:
+  containers:
+  - name: nginx
+    image: nginx:latest
+    env:
+    - name: LOCATION
+      valueFrom:
+        configMapKeyRef:
+          name: firstcm
+          key: LOCATION
+    - name: VERSION
+      valueFrom:
+        configMapKeyRef:
+          name: firstcm
+          key: VERSION
