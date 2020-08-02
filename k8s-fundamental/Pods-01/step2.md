@@ -2,7 +2,7 @@
 
 Pods can contain multiple containers. 
 
-Open the sample in the editor `/root/assets/multi-containers.po.yaml`
+Open the sample in the editor `/root/assets/multi-containers.po.yaml`{{open}}
 
 You should be able to see more containers defined like below.
 
