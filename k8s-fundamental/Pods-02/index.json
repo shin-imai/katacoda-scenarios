@@ -20,8 +20,9 @@
     ],
     "assets": {
       "host01": [
-        {"file": "simple.po.yaml", "target": "/root/assets/"},
-        {"file": "multi-containers.po.yaml", "target": "/root/assets/"}
+        {"file": "env-cm.po.yaml", "target": "/root/assets/"},
+        {"file": "volume-cm.po.yaml", "target": "/root/assets/"},
+        {"file": "sample.conf", "target": "/root/assets/"}
       ]
     },
     "intro": {
