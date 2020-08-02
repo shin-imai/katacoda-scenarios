@@ -16,4 +16,4 @@ This is an example of volume definition in the pod.
       name: sample-file-cm
 ```
 
-There are more options to use ConfigMap as a volume. Please see `kubectl explain pod.spec.volumes.configMap` for more detail.
+There are more options about ConfigMap as a volume. Please see `kubectl explain pod.spec.volumes.configMap` for more detail.

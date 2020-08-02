@@ -18,6 +18,12 @@
         "text": "step3.md"
       }
     ],
+    "assets": {
+      "host01": [
+        {"file": "simple.po.yaml", "target": "/root/assets/"},
+        {"file": "multi-containers.po.yaml", "target": "/root/assets/"}
+      ]
+    },
     "intro": {
       "text": "intro.md"
     },
