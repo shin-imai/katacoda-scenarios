@@ -3,8 +3,8 @@
   "description": "kubernetes fundamental training course",
   "courses": [
     {
-      "course_id": "Pods",
-      "title": "Pods",
+      "course_id": "Pods-01",
+      "title": "Pods besic",
       "description": "Kubernetes for beginners"
     }
   ]
