@@ -7,10 +7,9 @@ spec:
   - name: nginx
     image: nginx:latest
     volumeMounts:
-    - name: nginx-conf
-      mountPath: /etc/nginx/nginx.conf
-      subPath: sample.conf
+    - name: contents
+      mountPath: /usr/share/nginx/html
   volumes:
-  - name: nginx-conf
+  - name: contents
     configMap:
       name: sample-file-cm

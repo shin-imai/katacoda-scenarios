@@ -22,7 +22,7 @@
       "host01": [
         {"file": "env-cm.po.yaml", "target": "/root/assets/"},
         {"file": "volume-cm.po.yaml", "target": "/root/assets/"},
-        {"file": "sample.conf", "target": "/root/assets/"}
+        {"file": "sample.html", "target": "/root/assets/"}
       ]
     },
     "intro": {

@@ -21,7 +21,9 @@ The above example is created by the below command.
 
 You can also create `ConfigMap` from a file.
 
-`kubectl create configmap sample-file-cm --from-file=assets/sample.conf`{{execute}}
+`kubectl create configmap sample-file-cm --from-file=assets/sample.html`{{execute}}
+
+`kubectl get cm`{{execute}} to check if the ConfigMap is created.
 
 You can take a look at the `sample-file-cm` you just created.
 
