@@ -6,6 +6,11 @@
       "course_id": "Pods-01",
       "title": "Pods besic",
       "description": "Kubernetes for beginners"
+    },
+    {
+      "course_id": "Pods-02",
+      "title": "Pods and ConfitMap",
+      "description": "Use ConfigMap in Pods"
     }
   ]
 }
