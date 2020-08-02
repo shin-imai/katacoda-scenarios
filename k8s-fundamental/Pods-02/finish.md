@@ -1,0 +1,1 @@
+You should know about ConfigMap and how to use it. ConfigMap can be used just as a key-value store database. Once you store data in ConfigMap, you can access it via API so it becomes data store accessible via API. 

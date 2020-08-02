@@ -7,13 +7,13 @@ spec:
   - name: nginx
     image: nginx:latest
     env:
-    - name: LOCATION
+    - name: WHERE
       valueFrom:
         configMapKeyRef:
-          name: firstcm
+          name: sample-cm
           key: LOCATION
-    - name: VERSION
+    - name: WEATHER
       valueFrom:
         configMapKeyRef:
-          name: firstcm
-          key: VERSION
+          name: sample-cm
+          key: WEATHER
